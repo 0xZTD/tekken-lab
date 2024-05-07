@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Metropolis";
-  src: url("/fonts/Metropolis-Regular.woff2") format("woff2");
+  src: url("../fonts/Metropolis-Regular.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
