@@ -134,6 +134,8 @@ ul {
 
 .github {
   margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 .github img {
