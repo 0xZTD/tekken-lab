@@ -1,4 +1,6 @@
 import "./mainContent.css";
+import tekkenFight from "@assets/tekken8-fight.webp";
+import tekkenArt from "@assets/tekken8-art.webp";
 function MainContent() {
   return (
     <main>
@@ -14,7 +16,7 @@ function MainContent() {
       </article>
       <section className="action">
         <div className="action__card">
-          <img src="src/assets/tekken8-fight.webp" alt="tekken 8 fight scene" />
+          <img src={tekkenFight} alt="tekken 8 fight scene" />
           <section>
             <h3>Practice</h3>
             <p>
@@ -24,11 +26,7 @@ function MainContent() {
           </section>
         </div>
         <div className="action__card">
-          <img
-            src="src/assets/tekken8-art.webp"
-            alt="tekken 8 art"
-            loading="lazy"
-          />
+          <img src={tekkenArt} alt="tekken 8 art" loading="lazy" />
           <section>
             <h3>Characters</h3>
             <p>
