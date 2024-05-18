@@ -1,4 +1,5 @@
 import "./header.css";
+import githubIcon from "@assets/github-mark.svg";
 function Header() {
   return (
     <header>
@@ -20,7 +21,7 @@ function Nav() {
         </li>
         <li className="github">
           <a href="https://github.com/zestx5" target="_blank">
-            <img src="src/assets/github-mark.svg" alt="github icon" />
+            <img src={githubIcon} alt="github icon" />
           </a>
         </li>
       </ul>
