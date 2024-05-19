@@ -8,6 +8,7 @@ import {
   redirect,
 } from "react-router-dom";
 import MainContent from "@components/mainContent/mainContent.jsx";
+import Practice from "@components/practicePage/practice.jsx";
 
 const router = createBrowserRouter([
   { path: "/", element: redirect("/tekkenLab") },
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
         path: "/tekkenLab",
         element: <MainContent />,
       },
-      { path: "/tekkenLab/practice", element: <h1>PRACTICE</h1> },
+      { path: "/tekkenLab/practice", element: <Practice /> },
       { path: "/tekkenLab/characters", element: <h1>Characters</h1> },
     ],
   },
