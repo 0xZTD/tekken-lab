@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
 import "./header.css";
 import githubIcon from "@assets/github-mark.svg";
 function Header() {
   return (
     <header>
-      <h1>TekkenLab</h1>
+      <Link to="/tekkenLab">
+        <h1>TekkenLab</h1>
+      </Link>
       <Nav />
     </header>
   );
@@ -14,10 +17,10 @@ function Nav() {
     <nav>
       <ul>
         <li>
-          <a href="#">Practice</a>
+          <Link to="/tekkenLab/practice">Practice</Link>
         </li>
         <li>
-          <a href="#">Characters</a>
+          <Link to="/tekkenLab/characters">Characters</Link>
         </li>
         <li className="github">
           <a href="https://github.com/zestx5" target="_blank">

@@ -12,19 +12,16 @@ import MainContent from "@components/mainContent/mainContent.jsx";
 const router = createBrowserRouter([
   { path: "/", element: redirect("/tekkenLab") },
   {
-    path: "/tekkenLab/",
+    path: "/tekkenLab",
     element: <App />,
     children: [
       {
-        path: "/tekkenLab/",
+        path: "/tekkenLab",
         element: <MainContent />,
       },
+      { path: "/tekkenLab/practice", element: <h1>PRACTICE</h1> },
+      { path: "/tekkenLab/characters", element: <h1>Characters</h1> },
     ],
-  },
-  {
-    path: "/tekkenLab/practice",
-    element: <App />,
-    children: [{ path: "/tekkenLab/practice", element: <h1>PRACTICE</h1> }],
   },
 ]);
 

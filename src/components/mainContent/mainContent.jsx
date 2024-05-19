@@ -1,7 +1,9 @@
 import "./mainContent.css";
 import tekkenFight from "@assets/tekken8-fight.webp";
 import tekkenArt from "@assets/tekken8-art.webp";
+import { Link, redirect, useNavigate } from "react-router-dom";
 function MainContent() {
+  const navigate = useNavigate();
   return (
     <main>
       <article className="action-text">
@@ -15,7 +17,10 @@ function MainContent() {
         </p>
       </article>
       <section className="action">
-        <div className="action__card">
+        <div
+          className="action__card"
+          onClick={() => navigate("/tekkenLab/practice")}
+        >
           <img src={tekkenFight} alt="tekken 8 fight scene" />
           <section>
             <h3>Practice</h3>
@@ -25,7 +30,10 @@ function MainContent() {
             </p>
           </section>
         </div>
-        <div className="action__card">
+        <div
+          className="action__card"
+          onClick={() => navigate("/tekkenLab/characters")}
+        >
           <img src={tekkenArt} alt="tekken 8 art" loading="lazy" />
           <section>
             <h3>Characters</h3>
