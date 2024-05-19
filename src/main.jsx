@@ -7,12 +7,24 @@ import {
   createBrowserRouter,
   redirect,
 } from "react-router-dom";
+import MainContent from "@components/mainContent/mainContent.jsx";
 
 const router = createBrowserRouter([
   { path: "/", element: redirect("/tekkenLab") },
   {
     path: "/tekkenLab/",
     element: <App />,
+    children: [
+      {
+        path: "/tekkenLab/",
+        element: <MainContent />,
+      },
+    ],
+  },
+  {
+    path: "/tekkenLab/practice",
+    element: <App />,
+    children: [{ path: "/tekkenLab/practice", element: <h1>PRACTICE</h1> }],
   },
 ]);
 
