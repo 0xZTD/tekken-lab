@@ -1,11 +1,11 @@
 import "./mainContent.css";
 import tekkenFight from "@assets/tekken8-fight.webp";
 import tekkenArt from "@assets/tekken8-art.webp";
-import { Link, redirect, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 function MainContent() {
   const navigate = useNavigate();
   return (
-    <main>
+    <main className="main-content">
       <article className="action-text">
         <h2>Get Ready For The Next Battle!</h2>
         <p>
