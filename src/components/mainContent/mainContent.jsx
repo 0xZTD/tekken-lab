@@ -19,7 +19,7 @@ function MainContent() {
       <section className="action">
         <div
           className="action__card"
-          onClick={() => navigate("/tekkenLab/practice")}
+          onClick={() => navigate("/tekken-lab/practice")}
         >
           <img src={tekkenFight} alt="tekken 8 fight scene" />
           <section>
@@ -32,7 +32,7 @@ function MainContent() {
         </div>
         <div
           className="action__card"
-          onClick={() => navigate("/tekkenLab/characters")}
+          onClick={() => navigate("/tekken-lab/characters")}
         >
           <img src={tekkenArt} alt="tekken 8 art" loading="lazy" />
           <section>

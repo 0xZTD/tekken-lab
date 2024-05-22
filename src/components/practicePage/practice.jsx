@@ -23,7 +23,7 @@ function Menu() {
   return (
     <section>
       <ul className="practice__menu">
-        <Link to="/tekkenLab/practice/routines">
+        <Link to="/tekken-lab/practice/routines">
           Pre-built practice routines
         </Link>
         <Link>Library</Link>

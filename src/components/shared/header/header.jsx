@@ -4,7 +4,7 @@ import githubIcon from "@assets/github-mark.svg";
 function Header() {
   return (
     <header>
-      <Link to="/tekkenLab">
+      <Link to="/tekken-lab">
         <h1>TekkenLab</h1>
       </Link>
       <Nav />
@@ -17,10 +17,10 @@ function Nav() {
     <nav>
       <ul>
         <li>
-          <Link to="/tekkenLab/practice">Practice</Link>
+          <Link to="/tekken-lab/practice">Practice</Link>
         </li>
         <li>
-          <Link to="/tekkenLab/characters">Characters</Link>
+          <Link to="/tekken-lab/characters">Characters</Link>
         </li>
         <li className="github">
           <a href="https://github.com/zestx5" target="_blank">
