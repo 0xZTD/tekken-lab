@@ -21,6 +21,7 @@ const router = createBrowserRouter([
         element: <MainContent />,
       },
       { path: "/tekkenLab/practice", element: <Practice /> },
+      { path: "/tekkenLab/practice/routines", element: <h1>Routines</h1> },
       { path: "/tekkenLab/characters", element: <h1>Characters</h1> },
     ],
   },

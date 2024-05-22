@@ -1,0 +1,21 @@
+.main-practice {
+  background-color: #ffffff;
+  padding: 24px 16px;
+  border-radius: 4px;
+}
+
+.practice__heading {
+  font-size: 1.75rem;
+  margin-top: 12px;
+}
+
+.practice__menu {
+  display: flex;
+  align-items: start;
+  gap: 1.25rem;
+  flex-direction: column;
+}
+
+section:has(.practice__menu) {
+  margin-top: 12px;
+}
