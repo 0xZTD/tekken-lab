@@ -26,7 +26,7 @@ function Menu() {
         <Link to="/tekken-lab/practice/routines">
           Pre-built practice routines
         </Link>
-        <Link>Library</Link>
+        <Link to="/tekken-lab/practice/library">Library</Link>
         <Link>Custom routine builder</Link>
       </ul>
     </section>
